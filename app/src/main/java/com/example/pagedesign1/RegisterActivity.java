@@ -17,10 +17,10 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.example.loginout.connection.SharedPrefManager;
-import com.example.loginout.connection.VolleySingleton;
-import com.example.loginout.model.URLs;
-import com.example.loginout.model.User;
+import com.example.pagedesign1.connection.SharedPrefManager;
+import com.example.pagedesign1.connection.VolleySingleton;
+import com.example.pagedesign1.model.URLs;
+import com.example.pagedesign1.model.User;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -65,7 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //if user pressed on textview that already register open LoginActivity
                 finish();
-                startActivity(new Intent(com.example.loginout.RegisterActivity.this, LoginActivity.class));
+                startActivity(new Intent(com.example.pagedesign1.RegisterActivity.this, LoginActivity.class));
             }
         });
 

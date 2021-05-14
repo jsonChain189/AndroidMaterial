@@ -45,22 +45,29 @@
 
         <EditText
             android:id="@+id/editTextEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_width="366dp"
+            android:layout_height="61dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="16dp"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:padding="16dp" />
 
         <EditText
             android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_width="366dp"
+            android:layout_height="66dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/ic_lock"
             android:fontFamily="sans-serif"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:padding="16dp" />
 
         <RadioGroup
             android:id="@+id/radioGender"
@@ -88,18 +95,24 @@
 
         <Button
             android:id="@+id/buttonRegister"
-            android:layout_width="match_parent"
+            android:layout_width="217dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
             android:layout_marginTop="90dp"
-            android:text="Register" />
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_bg"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewLogin"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_height="28dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:text="Already Registered?\nLogin Here"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />

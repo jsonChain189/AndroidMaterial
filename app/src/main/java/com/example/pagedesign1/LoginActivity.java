@@ -92,18 +92,18 @@ public class LoginActivity extends AppCompatActivity {
                             JSONObject obj = new JSONObject(response);
 
                             //if no error in response
-                            if (!obj.getBoolean("error")) {
-                                Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+//                            if (!obj.getBoolean("error")) {
+                                Toast.makeText(getApplicationContext(), "Successfully login!", Toast.LENGTH_SHORT).show();
 
                                 //getting the user from the response
-                                JSONObject userJson = obj.getJSONObject("user");
+//                                JSONObject userJson = obj.getJSONObject("user");
 
                                 //creating a new user object
                                 User user = new User(
-                                        userJson.getInt("id"),
-                                        userJson.getString("username"),
-                                        userJson.getString("email"),
-                                        userJson.getString("gender")
+                                        1,
+                                        obj.getString("username"),
+                                        obj.getString("email"),
+                                        obj.getString("gender")
                                 );
 
                                 //storing the user in shared preferences
@@ -111,9 +111,9 @@ public class LoginActivity extends AppCompatActivity {
                                 //starting the profile activity
                                 finish();
                                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                            } else {
-                                Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
-                            }
+//                            } else {
+//                                Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+//                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
